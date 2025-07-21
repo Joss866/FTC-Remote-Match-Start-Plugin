@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "FTC Remote Game Start Plugin",
+  "version": "1.0",
+  "description": "A plugin to allow a keyboard key to remotly click the Show Preview, Show Match & Start Match once a match is loaded.",
+  "content_scripts": [
+    {
+      "matches": ["http://192.168.0.67/event/4321/control/"],
+      "js": ["remote-game-start.js"]
+    }
+  ]
+}
