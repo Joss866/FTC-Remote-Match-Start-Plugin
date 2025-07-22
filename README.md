@@ -18,6 +18,7 @@ Before using this plugin, ensure you have:
 
   * A web browser compatible with extensions (e.g., Google Chrome, Microsoft Edge, Mozilla Firefox).
   * An **FTC Live instance running locally** and accessible via the specified URL (e.g., `http://192.168.0.67/event/4321/control/`).
+  * That URL Also needs to be the same in the manifest.json to restrict the button aliases to just the Match Control page.
   * An active event loaded in FTC Live with the correct Event ID in the URL (e.g. 4321).
   * Node.js and npm (or yarn) installed if you plan to run the provided Cypress tests.
 
