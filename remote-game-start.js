@@ -6,7 +6,7 @@ function findAndClickButtonByText(buttonText) {
   const buttons = document.querySelectorAll('button');
 
   for (const button of buttons) {
-    // Normalize the whitespace of the button's text content.
+    // Normalise the whitespace of the button's text content.
     // This replaces all sequences of whitespace (including newlines) with a single space.
     const normalizedText = button.textContent.replace(/\s+/g, ' ').trim();
     
@@ -24,13 +24,13 @@ document.addEventListener('keydown', (event) => {
   event.preventDefault();
 
   switch (event.key) {
-    case 'F10':
+    case '1':
       findAndClickButtonByText(BUTTON_TEXT_1);
       break;
-    case 'F11':
+    case '2':
       findAndClickButtonByText(BUTTON_TEXT_2);
       break;
-    case 'F12':
+    case '3':
       findAndClickButtonByText(BUTTON_TEXT_3);
       break;
     default:
