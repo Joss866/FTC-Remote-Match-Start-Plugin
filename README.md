@@ -8,19 +8,19 @@ This plugin allows you to control specific buttons on the FTC Live control page 
 
 **Example Keyboard Mappings (Configurable in `contentScript.js`):**
 
-  * **F10:** Triggers the "Load Next Match" button.
-  * **F11:** Triggers the "Show Preview" button.
-  * **F12:** Triggers the "Show Match" button.
+- **1:** Triggers the "Load Next Match" button.
+- **2:** Triggers the "Show Preview" button.
+- **3:** Triggers the "Show Match" button.
 
 ## 📋 Prerequisites
 
 Before using this plugin, ensure you have:
 
-  * A web browser compatible with extensions (e.g., Google Chrome, Microsoft Edge, Mozilla Firefox).
-  * An **FTC Live instance running locally** and accessible via the specified URL (e.g., `http://192.168.0.67/event/4321/control/`).
-  * That URL Also needs to be the same in the manifest.json to restrict the button aliases to just the Match Control page.
-  * An active event loaded in FTC Live with the correct Event ID in the URL (e.g. 4321).
-  * Node.js and npm (or yarn) installed if you plan to run the provided Cypress tests.
+- A web browser compatible with extensions (e.g., Google Chrome, Microsoft Edge, Mozilla Firefox).
+- An **FTC Live instance running locally** and accessible via the specified URL (e.g., `http://192.168.0.67/event/4321/control/`).
+- That URL Also needs to be the same in the manifest.json to restrict the button aliases to just the Match Control page.
+- An active event loaded in FTC Live with the correct Event ID in the URL (e.g. 4321).
+- Node.js and npm (or yarn) installed if you plan to run the provided Cypress tests.
 
 ## 📦 Installation (Load as Unpacked Extension)
 
@@ -31,14 +31,14 @@ Before using this plugin, ensure you have:
     └── contentScript.js
     ```
 2.  **Open Browser Extensions:**
-      * **Chrome/Edge:** Go to `chrome://extensions` or `edge://extensions`.
-      * **Firefox:** Go to `about:debugging#/runtime/this-firefox`.
+    - **Chrome/Edge:** Go to `chrome://extensions` or `edge://extensions`.
+    - **Firefox:** Go to `about:debugging#/runtime/this-firefox`.
 3.  **Enable Developer Mode:**
-      * On Chrome/Edge, toggle the "Developer mode" switch, usually in the top-right corner.
-      * On Firefox, this is enabled by default in the `about:debugging` interface.
+    - On Chrome/Edge, toggle the "Developer mode" switch, usually in the top-right corner.
+    - On Firefox, this is enabled by default in the `about:debugging` interface.
 4.  **Load Unpacked Extension:**
-      * Click the "Load unpacked" button (Chrome/Edge) or "Load Temporary Add-on" (Firefox).
-      * Navigate to and select the `FtcLiveKeyboardControlPlugin` folder.
+    - Click the "Load unpacked" button (Chrome/Edge) or "Load Temporary Add-on" (Firefox).
+    - Navigate to and select the `FtcLiveKeyboardControlPlugin` folder.
 5.  **Verify:** The plugin should now appear in your list of extensions.
 
 ## 🚀 Usage
@@ -51,28 +51,13 @@ Before using this plugin, ensure you have:
 
 ## ⚙️ Customisation
 
-The keys are define in the "case" args of the switch statement in remote-gane-start.js
+The keys are defined in the "case" args of the switch statement in remote-game-start.js
 
 ## 🧪 Testing with Cypress
 
-This plugin has Cypress tests to verify its functionality and the state changes in the FTC Live application.
+This plugin has Cypress tests to show the state changes in the FTC Live application.
 
 ### Test Setup
-
-**Project Structure:** Your Cypress test project should be set up as follows:
-
-    ```
-    /your-cypress-project/
-    ├── FtcLiveKeyboardControlPlugin/        <-- Your plugin files here
-    │   ├── manifest.json
-    │   └── contentScript.js
-    ├── cypress/
-    │   └── e2e/
-    │       └── plugin.cy.js     <-- The test file
-    ├── cypress.config.js        <-- Cypress configuration
-    ├── package.json
-    └── ...
-    ```
 
 **Install Cypress:**
 
