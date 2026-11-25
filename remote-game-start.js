@@ -24,13 +24,13 @@ document.addEventListener('keydown', (event) => {
   event.preventDefault();
 
   switch (event.key) {
-    case '1':
+    case 'F13':
       findAndClickButtonByText(BUTTON_TEXT_1);
       break;
-    case '2':
+    case 'F14':
       findAndClickButtonByText(BUTTON_TEXT_2);
       break;
-    case '3':
+    case 'F15':
       findAndClickButtonByText(BUTTON_TEXT_3);
       break;
     default:
