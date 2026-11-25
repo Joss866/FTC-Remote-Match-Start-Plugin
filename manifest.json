@@ -5,6 +5,7 @@
   "description": "A plugin to allow a keyboard key to remotly click the Show Preview, Show Match & Start Match once a match is loaded.",
   "content_scripts": [
     {
+      "matches": ["<all_urls>"]
       "js": ["remote-game-start.js"]
     }
   ]
